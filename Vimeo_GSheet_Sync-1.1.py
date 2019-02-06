@@ -56,7 +56,6 @@ nextPageUrl = response['paging']['next']
 lastPageUrl = response['paging']['last']
 currPage = response['page']
 pageData = response['data']
-activeStatus = response['data']['active']
 dates = []
 
 ###########################################################
@@ -104,7 +103,7 @@ for page in range(2, int(lastPageUrl[-1]) + 1):
         quit(1)
 
 # Cleanup the dates and urls
-df = df[['name', 'uri', 'created_time', 'active']]  # Re-order for clarity
+df = df[['name', 'uri', 'created_time']]  # Re-order for clarity
 for dfitr, row in df.iterrows():
     uri = row['uri']
     urlCleanup = re.sub('/[^>]+/', '', uri)
@@ -112,7 +111,6 @@ for dfitr, row in df.iterrows():
     urlFix = 'https://vimeo.com/' + urlCleanup
     df.loc[dfitr, 'uri'] = urlFix
     df.loc[dfitr, 'created_time'] = dateCleanup
-
 
 # Print final dataframe
 print_final_df(df, 'Final Dataframe')
