@@ -12,14 +12,14 @@ import re
 ######### USER DEFINED VARIABLES #########
 
 # Vimeo API stuff
-TOKEN = '233440d7db5dc8e6ae2a5c5bcdc13f99'
-KEY = '4a03b5398c3a30f7cc188e10b10b0092c5ec76b2'
-SECRET = 'qvc4uW0kAYDNeVVagjlXJO6hHGzjqcY0S3FsD9nwEBLVtYP84DsJRBAu6x1mpxbOKuW2T8SlQX447lZaejJUfsPCpe6jRqZpXZ8wG8VXSWqtTxAsUHLsnGy94/Xckjp3'
+TOKEN = 'YOUR TOKEN STRING HERE'
+KEY = 'YOUR KEY HERE''
+SECRET = 'YOUR SECRET STRING HERE'
 
 # Google Sheets API stuff here
-sheetKey = '1J3Ak90DZYhOWmsQGtR4VXVA6jWQvsMewpmTFdyBhK-k'  # Target sheet to write data
-clientSecret = 'client_secret.json'  # Path to client secret JSON file from
-serviceFile = 'vimeosync-6fee608b2fcf.json'  # Path to service JSON file
+sheetKey = 'GOOGLE SHEET ID'  # Target sheet to write data
+clientSecret = 'YOUR CLIENT SECRET HERE'  # Path to client secret JSON file from
+serviceFile = 'YOUR SERVICE FILE HERE'  # Path to service JSON file
 
 # Vimeo data params.
 maxVids = '100'
